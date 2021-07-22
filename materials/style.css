@@ -15,7 +15,7 @@ body {
     overflow-x: hidden;
     font-family: "poppins";
     --primary: hsl(214, 100%, 46%);
-    --primaryShadow: hsla(214, 100%, 46%, 0.55);
+    --primaryShadow: hsla(214, 100%, 46%, 0.5);
     --primaryShade: white;
     --secondaryShade: rgb(245, 242, 248);
     --tertiaryShade: rgb(47, 48, 66);
@@ -46,7 +46,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 10px;
     padding: 9px 40px;
     background-color: var(--primary);
-    box-shadow: var(--primaryShadow) 0 6px 15px 0;
+    box-shadow: var(--primaryShadow) 0 8px 15px 0;
     width: fit-content;
     color: white;
     font-weight: 550;
