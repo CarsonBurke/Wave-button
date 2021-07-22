@@ -1,5 +1,5 @@
 let defaultStrength = 0.4
-let fadeAmount = 250
+let defaultFadeAmount = 150
 
 let themes = {
     light: "rgb(255, 255, 255, ",
@@ -78,6 +78,10 @@ async function addWave(e) {
 
     wave.style.top = button.getBoundingClientRect().top + "px" */
 
+    if (!button.dataset.waveFadeAmount) {
+
+        button.dataset.waveFadeAmount = defaultFadeAmount
+    }
 
     if (!button.dataset.waveStrength) {
 
@@ -129,7 +133,7 @@ async function addWave(e) {
 
         /* wave.style.transform = "translate3d(" + size * -0.5 + "px, " + size * -0.5 + "px, 0)" */
 
-        wave.style.opacity = 1 - i / fadeAmount
+        wave.style.opacity = 1 - i / button.dataset.waveFadeAmount
 
         await waveTimer(1)
     }
