@@ -1,6 +1,6 @@
 /*IMPORTANT*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -14,7 +14,8 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: "poppins";
-    --primary: rgb(211, 13, 13);
+    --primary: hsl(214, 100%, 46%);
+    --primaryShadow: hsla(214, 100%, 46%, 0.55);
     --primaryShade: white;
     --secondaryShade: rgb(245, 242, 248);
     --tertiaryShade: rgb(47, 48, 66);
@@ -37,3 +38,34 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 /*CONTENT*/
+
+.button {
+    font-family: "Poppins";
+    border: 0;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 9px 40px;
+    background-color: var(--primary);
+    box-shadow: var(--primaryShadow) 0 6px 15px 0;
+    width: fit-content;
+    color: white;
+    font-weight: 550;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+}
+
+.button:hover {
+    box-shadow: var(--primaryShadow) 0 3px 8px 0.2px, inset rgba(0, 0, 0, 0.1) 0 0 0 10000px;
+}
+
+.button:focus {
+    box-shadow: var(--primaryShadow) 0 6px 15px 2px;
+}
+
+.button span {
+    margin-right: 6px;
+    opacity: 0.9;
+}
