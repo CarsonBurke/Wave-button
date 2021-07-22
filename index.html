@@ -12,11 +12,55 @@
 
 <body>
 
-    <button class="button waveButton"><span class="material-icons-outlined">
-        home
-        </span>Wave button</button>
+    <div class="container">
+        <div class="flexParent">
+            <div class="flexChild">
+
+                <button class="button waveButton"><span class="material-icons-outlined">
+                    home
+                    </span>Default</button>
+
+            </div>
+            <div class="flexChild">
+
+                <button class="button waveButton" data-wave-time="8"><span class="material-icons-outlined">
+                    home
+            </span>Slow</button>
+
+            </div>
+            <div class="flexChild">
+
+                <button class="button waveButton" data-wave-time="1"><span class="material-icons-outlined">
+                    home
+            </span>Fast</button>
+
+            </div>
+            <div class="flexChild">
+
+                <button class="button waveButton" data-wave-theme="dark"><span class="material-icons-outlined">
+                    home
+            </span>Dark</button>
+
+            </div>
+            <div class="flexChild">
+
+                <button class="button waveButton" data-wave-strength="0.8"><span class="material-icons-outlined">
+                    home
+            </span>Strong light</button>
+
+            </div>
+            <div class="flexChild">
+
+                <button class="button waveButton" data-wave-theme="dark" data-wave-strength="0.8"><span class="material-icons-outlined">
+                    home
+            </span>Strong dark</button>
+
+            </div>
+        </div>
+    </div>
 
     <script src="materials/script.js"></script>
+    <script src="materials/wave.js"></script>
 </body>
 
 </html>

@@ -39,6 +39,20 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*CONTENT*/
 
+.container {
+    padding: 40px 5%;
+}
+
+.flexParent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexChild {
+    margin: 15px;
+}
+
 .button {
     font-family: "Poppins";
     border: 0;
@@ -62,10 +76,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .button:focus {
-    box-shadow: var(--primaryShadow) 0 6px 15px 2px;
+    box-shadow: var(--primaryShadow) 0 10px 30px 2px, inset rgba(0, 0, 0, 0) 0 0 0 10000px, var(--primaryShadow) 0 2px 6px 0;
 }
 
 .button span {
     margin-right: 6px;
     opacity: 0.9;
 }
+
+.boxButton {}
