@@ -41,8 +41,6 @@ window.onload = function() {
 
         button.addEventListener("mousedown", addWave)
 
-        console.log(button.childNodes)
-
         for (let child of button.childNodes) {
 
             if (child.style) {
