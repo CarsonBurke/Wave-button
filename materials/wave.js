@@ -1,5 +1,5 @@
 let defaultStrength = 0.4
-let defaultFadeAmount = 150
+let defaultFadeAmount = 250
 
 let themes = {
     light: "rgb(255, 255, 255, ",
