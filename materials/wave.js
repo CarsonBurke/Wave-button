@@ -77,10 +77,6 @@ async function addWave(e) {
 
     wave.style.top = y - button.getBoundingClientRect().top + "px"
 
-    /* wave.style.left = button.getBoundingClientRect().left + "px"
-
-    wave.style.top = button.getBoundingClientRect().top + "px" */
-
     if (!button.dataset.waveFadeAmount) {
 
         button.dataset.waveFadeAmount = defaultFadeAmount
