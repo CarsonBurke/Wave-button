@@ -39,7 +39,9 @@ function addStyles() {
 
 let waveButtons = document.getElementsByClassName("waveButton")
 
-window.onload = function() {
+window.addEventListener("load", addChanges)
+
+function addChanges() {
 
     // Apply required changes to button
 
