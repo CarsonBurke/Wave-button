@@ -2,6 +2,7 @@
 
 let defaultStrength = 0.4
 let defaultFadeAmount = 250
+let defaultWaveSpeed = 1
 
 let themes = {
     light: "rgb(255, 255, 255, ",
@@ -89,7 +90,7 @@ async function addWave(e) {
 
     if (!button.dataset.waveTime) {
 
-        button.dataset.waveTime = 2
+        button.dataset.waveTime = defaultWaveSpeed
     }
 
     let theme
