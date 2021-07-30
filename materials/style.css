@@ -14,12 +14,13 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: "poppins";
-    --primary: hsl(214, 100%, 46%);
+    --primary: #0066eb;
     --primaryShadow: hsla(214, 100%, 46%, 0.5);
     --primaryShade: white;
     --secondaryShade: rgb(245, 242, 248);
     --tertiaryShade: rgb(47, 48, 66);
     --quaternaryShade: rgb(51, 52, 71);
+    color: #a3a3a3;
 }
 
 body::-webkit-scrollbar {
