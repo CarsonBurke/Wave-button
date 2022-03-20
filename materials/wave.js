@@ -122,22 +122,13 @@ async function addWave(e) {
 
     let size = 0
 
-    for (let i = 0; i < button.dataset.waveTime * 100; i += 1) {
+    for (let i = 0; i < (button.dataset.waveTime * 100); i++) {
 
-        size += button.offsetWidth / 60
-
-        wave.style.boxShadow = theme + button.dataset.waveStrength + ") 0 0 0 " + size + "px"
-
-        wave.style.opacity = (0.4 + i * 3) / button.dataset.waveFadeAmount
-
-        await waveTimer(1)
-    }
-
-    for (let i = button.dataset.waveTime * 100; i > 0; i -= 3) {
+        size += button.offsetWidth / 100
 
         wave.style.boxShadow = theme + button.dataset.waveStrength + ") 0 0 0 " + size + "px"
 
-        wave.style.opacity = (0.4 + i * 3) / button.dataset.waveFadeAmount
+        wave.style.opacity = 1 - i / button.dataset.waveFadeAmount
 
         await waveTimer(1)
     }
